@@ -67,8 +67,7 @@ df.head()
 
 ### 2.1 구글
 * [Vision API](https://cloud.google.com/vision?utm_source=google&utm_medium=cpc&utm_campaign=japac-KR-all-en-dr-BKWS-all-hv-trial-PHR-dr-1605216&utm_content=text-ad-none-none-DEV_c-CRE_631194514224-ADGP_Hybrid%20%7C%20BKWS%20-%20BRO%20%7C%20Txt%20~%20AI%20&%20ML_Vision%20AI_google%20vision%20api_main-KWID_43700076510377423-aud-1596662389894%3Akwd-151378238431&userloc_1009875-network_g&utm_term=KW_google%20vision%20api&gclid=EAIaIQobChMIhp29irGSgQMVdsBMAh2V9wW5EAAYASAAEgL-5fD_BwE&gclsrc=aw.ds&hl=ko)
-* 이미지 크리 조정 불가
-
+* 이미지 크기 조정 불가
 ![vision_api_log](./vision_api_logo.png)
 * 이미지 크기 조정 가능
 <p align="center">
