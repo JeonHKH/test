@@ -7,23 +7,24 @@
 
   - [2.1 구글](#21-구글)
   - [2.2 네이버](#22-네이버)
+  - [2.3 OpenAI](#23-open-ai)
 
-[3. 프로젝트 1에서 활용해 볼 API 선정 및 설명]
+[3. 프로젝트 1에서 활용해 볼 API 선정 및 설명](#3-프로젝트-1에서-활용해-볼-api-선정-및-설명)
 
 ***
 
 ## 1. 개 요
 인공지능 API란 특정 기업이나 단체가 제공하는 인공지능 기술을 사용할 수 있는 플랫폼이다.
 
-* a  
-    * aa
-      * aaa
-- b  
-  - -bb
-    - -bbb
-+ c  
-  + cc
-    + +ccc
+* 자연어 처리API  
+    * 텍스트 생성, 번역, 감정 분석, 텍스트 분류
+      * OpenAi GPT API /// Google Cloud Natural Language API /// Microsoft Azure Text Analytics
+  - 이미지 및 비디오 처리API  
+    - -객체 감지, 얼굴 인식, 이미지 분류, 비디오 분석
+      - -Google Cloud Vision API /// Microsoft Azure Computer Vision API
++ 게임 및 엔터테인먼트 API  
+  + 게임 개발, 가상 현실, 캐릭터 생성
+    +  Unity ML-Agents Toolkit /// OpenAI Gym
 
 *스타일 적용하기
 * **진하게** ('Ctrl + B')
@@ -78,5 +79,7 @@ df.head()
 ### 2.2 네이버
 *[Naver Clova](https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1033136_16021439544384507.jpg)
   * Naver Clova는 음성인식, 자연어 처리, 이미지 분석같은 기능을 제공하는 인공지능 API이다
+### 2.3 Open AI
 ## 3. 프로젝트 1에서 활용해 볼 API 선정 및 설명
 ***
+## **Unity**
