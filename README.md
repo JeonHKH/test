@@ -26,42 +26,7 @@
   + 게임 개발, 가상 현실, 캐릭터 생성
     +  Unity ML-Agents Toolkit /// OpenAI Gym
 
-*스타일 적용하기
-* **진하게** ('Ctrl + B')
-* _기울이기_('Ctrl + I')
-* <s>취소선</s>
-* <u>밑줄</u>
 
->인용문
-
-<details><summary>접고펴기
-</summary>
-내용작성하기
-</details>
-
-
-### 소스코드 넣기
-```cpp
-#include<studio.h>
-int main()
-{
-  float a = 1.0;
-  float b = 2.0;
-  c = a + b;
-  printf("%d\n", c);
-}
-```
-```python
-for j in range(10):
-  sum += j
-print("sum from 1 to 10 : ", sum)
-```
-```python
-import pandas as pd
-file_path = "Enter your file path"
-df = pd.read_csb(file_path)
-df.head()
-```
 
 
 ## 2. 대표적인 인공지능 API
