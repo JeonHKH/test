@@ -47,4 +47,4 @@
 ### 2.3 Open AI
 ## 3. 프로젝트 1에서 활용해 볼 API 선정 및 설명
 ***
-## **[Unity]**(http://makeshare.org/data/editor/1603/02cd46d8a607ca14b01d10ead866e139_1458001888_2849.png)
+## *[Unity](http://makeshare.org/data/editor/1603/02cd46d8a607ca14b01d10ead866e139_1458001888_2849.png)
