@@ -42,7 +42,8 @@
 
   * Vision API는 특정 이미지를 인식하여 분류기능을 하는 인공지능 API이다.
 ### 2.2 네이버
-*[Naver Clova](https://file.mk.co.kr/meet/neds/2020/10/image_readtop_2020_1033136_16021439544384507.jpg)
+*[Naver Clova](![유니티](https://github.com/JeonHKH/test/assets/101096773/95661649-2a41-4089-9d4e-4868f2e124e6)
+)
   * Naver Clova는 음성인식, 자연어 처리, 이미지 분석같은 기능을 제공하는 인공지능 API이다
 ### 2.3 Open AI
 ## 3. 프로젝트 1에서 활용해 볼 API 선정 및 설명
