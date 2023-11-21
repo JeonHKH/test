@@ -25,7 +25,8 @@ AI 네컷만화는 세 가지 단계로 구분할 수 있습니다.
 const apiKey = 'stablediffusion api key';
 const prompt = "<lora:Solo Levelling v2-000004:0. 7>, female, black hair, short hair, grey eyes, detailed eyes, solo focus, simple background, female focus, solo, standing, portrait, (masterpiece:1. 0), (best quality:1. 0), (8k wallpaper:1. 0), (detailed deep eyes), deep eyes, {{{looking away}}}";
 const numberOfPics = '4' //Limitation of 4 maximum image generation per call observed.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+****************************************************************************************************************************************************************************************************************
 
 **2.2  ai model 선정**
         "key": apiKey,
