@@ -40,6 +40,8 @@ AI 네컷만화는 세 가지 단계로 구분할 수 있습니다.
 
 ## 3. 웹 표시 및 저장
 **3.1 만화 페이지 제작**
+
+
         const http = require('http');
         const fs = require('fs');
         const https = require('https');
