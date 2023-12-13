@@ -288,74 +288,74 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 </details>
 
 prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
-## 2.3.4
+**2.3.4 구동원리** 
 ~~~
- <script>
-      async function generateImage(imageNumber) {
-        const promptId = 'prompt' + imageNumber;
-        const imageId = 'image' + imageNumber;
-  
-        const promptText = document.getElementById(promptId).value;
-        if (!promptText) {
-          alert('Please enter a prompt!');
-          return;
-        }
-  
-        const url = 'http://127.0.0.1:7860/sdapi/v1/txt2img';
-        const payload = {
-          prompt: promptText,
-          negative_prompt: "(fat, obese, overweight), (worst quality:1.2), (low quality:1.2), easynegative, (jpeg artifact), watermark, font, text, watermark, username, patreon username, patreon logo, censored, bar censor, (wrinkled, grandma, granny), ((books)), ((painting, mirror))",
-          seed: 564404008,  
-          cfg_scale: 6,
-          sampler_index: 'DPM++ 2M Karras',
-          steps: 30
-        };
-  
-        try {
-          const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-          });
-  
-          if (!response.ok) {
-            throw new Error('Error generating image');
-          }
-  
-          const responseData = await response.json();
-          const imageData = responseData.images[0];
-          const imageBlob = base64ToBlob(imageData, 'image/png');
-  
-          const imageUrl = URL.createObjectURL(imageBlob);
-          document.getElementById(imageId).src = imageUrl;
-          console.log(`Image ${imageNumber} generated`);
-        } catch (error) {
-          console.error('Error:', error.message);
-        }
-      }
-  
-      function base64ToBlob(base64Data, contentType) {
-        const sliceSize = 1024;
-        const byteCharacters = atob(base64Data);
-        const byteArrays = [];
-  
-        for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
-          const slice = byteCharacters.slice(offset, offset + sliceSize);
-  
-          const byteNumbers = new Array(slice.length);
-          for (let i = 0; i < slice.length; i++) {
-            byteNumbers[i] = slice.charCodeAt(i);
-          }
-  
-          const byteArray = new Uint8Array(byteNumbers);
-          byteArrays.push(byteArray);
-        }
-  
-        return new Blob(byteArrays, { type: contentType });
-      }
-    </script>
+1  <script>
+2       async function generateImage(imageNumber) {
+3         const promptId = 'prompt' + imageNumber;
+4         const imageId = 'image' + imageNumber;
+5   
+6         const promptText = document.getElementById(promptId).value;
+7         if (!promptText) {
+8           alert('Please enter a prompt!');
+9           return;
+10        }
+11  
+12         const url = 'http://127.0.0.1:7860/sdapi/v1/txt2img';
+13         const payload = {
+14           prompt: promptText,
+15           negative_prompt: "(fat, obese, overweight), (worst quality:1.2), (low quality:1.2), easynegative, (jpeg artifact), watermark, font, text, watermark, username, patreon username, patreon logo, censored, bar censor, (wrinkled, grandma, granny), ((books)), ((painting, mirror))",
+16           seed: 564404008,  
+17           cfg_scale: 6,
+18           sampler_index: 'DPM++ 2M Karras',
+19           steps: 30
+20         };
+21  
+22         try {
+23           const response = await fetch(url, {
+24             method: 'POST',
+25             headers: {
+26               'Content-Type': 'application/json'
+27             },
+28             body: JSON.stringify(payload)
+29           });
+30   
+31           if (!response.ok) {
+32             throw new Error('Error generating image');
+33           }
+34   
+35           const responseData = await response.json();
+36           const imageData = responseData.images[0];
+37           const imageBlob = base64ToBlob(imageData, 'image/png');
+38   
+39           const imageUrl = URL.createObjectURL(imageBlob);
+40           document.getElementById(imageId).src = imageUrl;
+41           console.log(`Image ${imageNumber} generated`);
+42         } catch (error) {
+43          console.error('Error:', error.message);
+44         }
+45       }
+46   
+47       function base64ToBlob(base64Data, contentType) {
+48         const sliceSize = 1024;
+49         const byteCharacters = atob(base64Data);
+50         const byteArrays = [];
+51   
+52         for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+53           const slice = byteCharacters.slice(offset, offset + sliceSize);
+54   
+55           const byteNumbers = new Array(slice.length);
+56           for (let i = 0; i < slice.length; i++) {
+57             byteNumbers[i] = slice.charCodeAt(i);
+58           }
+59   
+60           const byteArray = new Uint8Array(byteNumbers);
+61           byteArrays.push(byteArray);
+62         }
+63   
+64         return new Blob(byteArrays, { type: contentType });
+65       }
+66    </script>
 ~~~
 위에  payload안에 prompt를 제외하고 나머지 스케일러나 시드 등등을 변경하여 이미지의 퀄리티를 높일 수 있다.
 
