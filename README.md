@@ -32,9 +32,14 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
  
 1. 스토리 짜기
 open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
+
  <details><summary>
 </summary>
+
+  
 ![11111111111111111111111111111](https://github.com/JeonHKH/test/assets/101096773/17f236ca-7cad-4ddc-b26b-4c7ae0b9e827)
+
+
   </details>
 ![image](https://github.com/JeonHKH/test/assets/101096773/832a385e-4e1d-4c6d-8718-45172d7199b2)
 
