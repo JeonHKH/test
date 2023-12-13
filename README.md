@@ -225,7 +225,7 @@ ex) going down the mountain -> mountain, goes down
 3.  만약 prompt에 대해 아예 모른다면 https://civitai.com에 들어가 자신이 사용하는 모델을 검색하여 가장 나온 것 같은 사진의 prompt를 변형하는 것이 가장 좋다.
 ![image](https://github.com/JeonHKH/test/assets/101096773/5a60295c-09b0-45b4-8ae9-74853af0f189)
 
-### *2.3.2 사용한 api*
+### 2.3.2 사용한 api
 
 ###2.3.2(1) api 시행 착오
 https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
