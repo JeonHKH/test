@@ -180,7 +180,18 @@ ex) going down the mountain -> mountain, goes down
 
 3-2 사용한 api 
 
+3-2-1시행 착오
+https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
+![image](https://github.com/JeonHKH/test/assets/101096773/b7a125e6-bb2f-4978-b67e-ef16d5598e53)
+그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해보고 했지만 해결이 불가능 했다.
 
+이 문제는 다른 api를 사용때도 항상 발생했다.
+ex) replicate 오류 사진
+
+그래서 finetuning을 통해 모델을 만들어 api를 만들려고 했지만 모델의 결과물이 마음에 들지 않았다.
+ex) finetuning한 모델에서 나온 사진
+
+3-2-2 정착
 
 
 
