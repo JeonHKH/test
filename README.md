@@ -24,7 +24,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 # 2. 만화생성 과정
   ### 2.1 준비물
-*  flask 서버
+* flask 서버
 * fastapi
 * openai api key
 
