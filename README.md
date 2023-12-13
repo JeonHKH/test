@@ -107,10 +107,22 @@ chatboot.html에서 "알고싶은걸 말씀하세요 "부분에 자신이 원하
 
 2. prompt 생성
 
+ <details><summary>
+</summary>
 
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/f03a21ca-7f2f-4c17-8513-064c582be09f)
+
+</details>
+
+ <details><summary>
+</summary>
+
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/30857a90-2d14-4ce8-97e1-bdbf1f48dab2)
 
+
+</details>
 
 flask를 이용하여 홈페이지에서 "enter prompt"칸에 1단계에서 생성한 스토리를 넣고 "generate"버튼을 누르면 stablediffusion용 prompt로 바뀌어 밑에 출력이된다.
 
@@ -180,8 +192,21 @@ casc.html 코드 중
 
 3. 만화 Generate
 
+
+ <details><summary>
+</summary>
+
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/65e9b0e4-777b-44c3-885a-7a9b527cb6f4)
+
+</details>
+
+ <details><summary>
+</summary>
+
 ![image](https://github.com/JeonHKH/test/assets/101096773/753c87a3-d647-4d4b-ad70-29b56dc79b4a)
+
+</details>
 
 prompt 입력 칸에 2단계에서 생성한 prompt를 넣고 generate 버튼을 누르면 이미지가 생성돼서 나온다.
 
@@ -197,7 +222,17 @@ ex) going down the mountain -> mountain, goes down
 
 3-2-1 api 시행 착오
 https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
+
+ <details><summary>
+</summary>
+
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/b7a125e6-bb2f-4978-b67e-ef16d5598e53)
+
+
+</details>
+
+
 그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해보고 했지만 해결이 불가능 했다.
 
 이 문제는 다른 api를 사용때도 항상 발생했다.
@@ -210,17 +245,38 @@ ex) finetuning한 모델에서 나온 사진
 
 많은 시행 착오를 거쳐 나온 것이 Stablediffusion webui였다.
 
+ <details><summary>
+</summary>
+
+
 ![image](https://github.com/JeonHKH/test/assets/101096773/45370575-c1be-4d4e-abf6-794179ff0b89)
+
+</details>
 sdui 모델 폴더에 미리 모델을 넣어 놓으면 왼쪽위에서 변경하여 checkpoint를 변경할 수 있다
 밑에 lora 같은 경우는 더 높은 퀄리티를 생성할 때 생성할때 사용한다.
 
 fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
+
+ <details><summary>
+</summary>
+
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/30ce198b-0872-4fa6-84bd-878058c0ad08)
+
+</details>
 
 물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 set COMMANDLINE_ARGS=--api --cors-allow-origins * 커맨드라인을 추가해서 cor error를 피할수 있었다.
 
-3-2-3 이미지 시행 칙오
-![dddadad](https://github.com/JeonHKH/test/assets/101096773/6237258b-3ffd-41a9-93f2-225deb526c4a)
+3-2-3 이미지 시행 착오
+
+ <details><summary>
+</summary>
+
+![dddadad](https://github.com/JeonHKH/test/assets/101096773/6237258b-3ffd-41a9-93f2-225deb526c4a)  
+
+
+</details>
+
 prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
 3-3 구동 원리
  <script>
