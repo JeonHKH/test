@@ -289,6 +289,7 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
 ## 2.3.4
+~~~
  <script>
       async function generateImage(imageNumber) {
         const promptId = 'prompt' + imageNumber;
@@ -355,7 +356,7 @@ prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하�
         return new Blob(byteArrays, { type: contentType });
       }
     </script>
-
+~~~
 위에  payload안에 prompt를 제외하고 나머지 스케일러나 시드 등등을 변경하여 이미지의 퀄리티를 높일 수 있다.
 
 
