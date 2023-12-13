@@ -54,7 +54,7 @@ open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
 위 이미지처럼 원하는 형식,장르등등의 스토리를 넣고 대답하기를 누르면 밑에 빈칸에 chatgpt가 대답한 내용이 출력되는 방식을  채택하였습니다.
 
-> 1-1 구동원리
+> 구동원리
 >```
 >1  chatboot.html 코드중
 >2  <div class="input-group mb-3">
