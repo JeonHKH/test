@@ -180,7 +180,7 @@ ex) going down the mountain -> mountain, goes down
 
 3-2 사용한 api 
 
-3-2-1시행 착오
+3-2-1 api 시행 착오
 https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
 ![image](https://github.com/JeonHKH/test/assets/101096773/b7a125e6-bb2f-4978-b67e-ef16d5598e53)
 그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해보고 했지만 해결이 불가능 했다.
@@ -204,6 +204,9 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 set COMMANDLINE_ARGS=--api --cors-allow-origins * 커맨드라인을 추가해서 cor error를 피할수 있었다.
 
+3-2-3 이미지 시행 칙오
+![dddadad](https://github.com/JeonHKH/test/assets/101096773/6237258b-3ffd-41a9-93f2-225deb526c4a)
+prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
 3-3 구동 원리
  <script>
       async function generateImage(imageNumber) {
