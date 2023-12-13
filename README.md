@@ -164,7 +164,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-casc.html 코드 중 
+##### *casc.html 코드 중*
    <div class="">
 
     <input type="text" id="promptInput" placeholder="Enter prompt...">
