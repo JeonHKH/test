@@ -263,7 +263,7 @@ ex) ![image](https://github.com/JeonHKH/test/assets/101096773/59b5a7a3-ca0c-4c19
 
 </details>
 sdui 모델 폴더에 미리 모델을 넣어 놓으면 왼쪽위에서 변경하여 checkpoint를 변경할 수 있다
-밑에 lora 같은 경우는 더 높은 퀄리티를 생성할 때 생성할때 사용한다.
+더 높은 퀄리티를 생성하기위해서는 lora같은 모델을 사용하기도한다.
 
 fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
