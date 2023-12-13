@@ -41,7 +41,15 @@ open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
 
   </details>
+
+   <details><summary>
+</summary>
+
+    
 ![image](https://github.com/JeonHKH/test/assets/101096773/832a385e-4e1d-4c6d-8718-45172d7199b2)
+
+
+  </details>
 
 
 위 이미지처럼 원하는 형식,장르등등의 스토리를 넣고 대답하기를 누르면 밑에 빈칸에 chatgpt가 대답한 내용이 출력되는 방식을  채택하였습니다.
