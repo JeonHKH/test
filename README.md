@@ -22,9 +22,8 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 
 
-<span style="font-size:250%">폰트사이즈 250</span> 
-# 2. 만화생성 과정<br/>
-## 2.1 준비물
+## 2. 만화생성 과정<br/>
+### **2.1 준비물**
 * flask 서버
 * fastapi
 * openai api key
