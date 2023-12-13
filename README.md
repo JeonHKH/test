@@ -225,9 +225,9 @@ ex) going down the mountain -> mountain, goes down
 3.  만약 prompt에 대해 아예 모른다면 https://civitai.com에 들어가 자신이 사용하는 모델을 검색하여 가장 나온 것 같은 사진의 prompt를 변형하는 것이 가장 좋다.
 ![image](https://github.com/JeonHKH/test/assets/101096773/5a60295c-09b0-45b4-8ae9-74853af0f189)
 
-### 3-2 사용한 api 
+### *2.3.2 사용한 api*
 
-3-2-1 api 시행 착오
+###2.3.2(1) api 시행 착오
 https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
   
 ![image](https://github.com/JeonHKH/test/assets/101096773/b7a125e6-bb2f-4978-b67e-ef16d5598e53)
@@ -243,7 +243,7 @@ ex) replicate 오류 사진
 그래서 finetuning을 통해 모델을 만들어 api를 만들려고 했지만 모델의 결과물이 마음에 들지 않았다.
 ex) finetuning한 모델에서 나온 사진
 
-### 3-2-2 정착
+### 2.3.2(2) 정착
 
 많은 시행 착오를 거쳐 나온 것이 Stablediffusion webui였다.
 
