@@ -65,37 +65,36 @@ open ai api를 이용하여 chatgpt를 통해 스토리를 생성할 예정입�
 ##### *chat.js 코드중*
 
 ```
-var OPENAI_API_KEY = 
-         "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";
-
-function Send(){
-
-  var sQuestion = txtMsg.value;
-  var data = {
-        model: "text-davinci-003",
-        prompt: sQuestion,
-        max_tokens: 2048,
-        temperature: 0
-  }  
-  $.ajax({
-    type: "POST",
-    url: 'https://api.openai.com/v1/completions',
-    headers:{
-        "Accept" : "application/json",
-        "Content-Type": "application/json", 
-        "Authorization": "Bearer " +  OPENAI_API_KEY },
-    data: JSON.stringify(data),
-
-  }).done(function(response) {
-
-        var sanswer = response.choices[0].text
-        txtOut.value = sanswer
-
-  }).fail(function(error) {
-    alert("!/js/user.js에서 에러발생: " + error.statusText);
-    console.log(error)
-  });
-}
+1 var OPENAI_API_KEY = "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";
+2 
+3 function Send(){
+4
+5  var sQuestion = txtMsg.value;
+6  var data = {
+7        model: "text-davinci-003",
+8        prompt: sQuestion,
+9        max_tokens: 2048,
+10        temperature: 0
+11  }  
+12  $.ajax({
+13    type: "POST",
+14    url: 'https://api.openai.com/v1/completions',
+15   headers:{
+16        "Accept" : "application/json",
+17        "Content-Type": "application/json", 
+18        "Authorization": "Bearer " +  OPENAI_API_KEY },
+19    data: JSON.stringify(data),
+20
+21  }).done(function(response) {
+22
+23       var sanswer = response.choices[0].text
+24        txtOut.value = sanswer
+25
+26  }).fail(function(error) {
+27    alert("!/js/user.js에서 에러발생: " + error.statusText);
+28   console.log(error)
+29  });
+30 }
 ```
 
 chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를<br/> 호출하여 chatgpt가 대답을 하고 "답변이 나타나는 곳입니다"에 표시됩니다.
