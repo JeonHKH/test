@@ -137,63 +137,63 @@ flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스�
 2. GPT2Tokenizer, GPT2LMHeadModel import하려고 js에서 노력했지만 js에서는 아직 개발이 좨지 않아 저 둘을 받을 수 조차 없다
 3.from flask_cors import CORS flask에서는 node와 달리 저런 간단한 코드 하나면 cors error에서 벗어날 수 있다
 
-**2-1-2 구동 코드**
+**2.2.2 구동 코드**
 ```
-apppp.py
-
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from transformers import GPT2Tokenizer, GPT2LMHeadModel
-
-app = Flask(__name__)
-CORS(app)
-tokenizer = GPT2Tokenizer.from_pretrained('distilgpt2')
-model = GPT2LMHeadModel.from_pretrained('FredZhang7/distilgpt2-stable-diffusion-v2')
-
-@app.route('/generate_text', methods=['POST'])
-def generate_text():
-    prompt = request.json['prompt']
-    input_ids = tokenizer(prompt, return_tensors='pt').input_ids
-    output = model.generate(input_ids, do_sample=True, max_length=80, num_return_sequences=5)
-
-    generated_text = [tokenizer.decode(seq, skip_special_tokens=True) for seq in output]
-    return jsonify({'generated_text': generated_text})
-
-if __name__ == '__main__':
-    app.run(debug=True)
+1 apppp.py
+2 
+3 from flask import Flask, request, jsonify
+4 from flask_cors import CORS
+5 from transformers import GPT2Tokenizer, GPT2LMHeadModel
+6 
+7 app = Flask(__name__)
+8 CORS(app)
+9 tokenizer = GPT2Tokenizer.from_pretrained('distilgpt2')
+10 model = GPT2LMHeadModel.from_pretrained('FredZhang7/distilgpt2-stable-diffusion-v2')
+11
+12 @app.route('/generate_text', methods=['POST'])
+13 def generate_text():
+14     prompt = request.json['prompt']
+15     input_ids = tokenizer(prompt, return_tensors='pt').input_ids
+16     output = model.generate(input_ids, do_sample=True, max_length=80, num_return_sequences=5)
+17 
+18    generated_text = [tokenizer.decode(seq, skip_special_tokens=True) for seq in output]
+19    return jsonify({'generated_text': generated_text})
+20
+21 if __name__ == '__main__':
+22     app.run(debug=True)
 ```
 
 ##### *casc.html 코드 중*
 ```
-   <div class="">
-
-    <input type="text" id="promptInput" placeholder="Enter prompt...">
-    <button onclick="generateText()">Generate</button>
-    <div id="output">
-   </div>
-
-</div>
-    <script>
-        async function generateText() {
-            const prompt = document.getElementById('promptInput').value;
-            const response = await fetch('http://localhost:5000/generate_text', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ prompt: prompt })
-            });
-            const data = await response.json();
-            const outputDiv = document.getElementById('output');
-            outputDiv.innerHTML = '';
-            data.generated_text.forEach(text => {
-                const p = document.createElement('p');
-                p.textContent = text;
-                outputDiv.appendChild(p);
-            });
-        }
-        
-    </script>
+1   <div class="">
+2
+3    <input type="text" id="promptInput" placeholder="Enter prompt...">
+4    <button onclick="generateText()">Generate</button>
+5    <div id="output">
+6   </div>
+7
+8 </div>
+9     <script>
+10         async function generateText() {
+11             const prompt = document.getElementById('promptInput').value;
+12             const response = await fetch('http://localhost:5000/generate_text', {
+13                 method: 'POST',
+14                 headers: {
+15                     'Content-Type': 'application/json'
+16                 },
+17                 body: JSON.stringify({ prompt: prompt })
+18             });
+19             const data = await response.json();
+20             const outputDiv = document.getElementById('output');
+21             outputDiv.innerHTML = '';
+22             data.generated_text.forEach(text => {
+23                 const p = document.createElement('p');
+24                 p.textContent = text;
+25                 outputDiv.appendChild(p);
+26             });
+27        }
+28        
+29     </script>
 ```
 위에 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 가서 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환돼 나온 후 fetch를 통해 받아오는 형식이다
 
