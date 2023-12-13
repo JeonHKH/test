@@ -22,6 +22,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 
 
+<span style="font-size:250%">2. 만화생성 과정<br/></span>
 # 2. 만화생성 과정<br/>
 ## 2.1 준비물
 * flask 서버
@@ -31,7 +32,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
  ## 2.2 만화 생성하기
  
 #### 2.2-1 스토리 짜기</br>
-open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다.
+open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
  <details><summary>
 </summary>
