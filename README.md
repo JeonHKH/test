@@ -29,7 +29,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
  ### **2.2 만화 생성하기**
  
-#### **2.2-1 스토리 짜기**</br>
+#### **2.2.1 스토리 짜기**</br>
 open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
  <details><summary>
@@ -101,7 +101,7 @@ function Send(){
 
 chatboot.html에서 "알고싶은걸 말씀하세요 "부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를 호출하여 chatgpt가 대답을 하고  "답변이 나타나는 곳입니다"에 표시된다고 보면 됩니다.
 
-#### 2.2-2 prompt 생성
+#### 2.2.2 prompt 생성
 
  <details><summary>
 </summary>
