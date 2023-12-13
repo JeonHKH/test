@@ -246,6 +246,10 @@ ex)![image](https://github.com/JeonHKH/test/assets/101096773/34cc31aa-11e8-4990-
 training용 사진
 ![image](https://github.com/JeonHKH/test/assets/101096773/2a7df6fe-4329-4b87-9afd-ed604a937af9)
 
+model 사용한 흔적 
+
+![image](https://github.com/JeonHKH/test/assets/101096773/aebc8b26-7a9a-402f-b89f-cda1de85d5f9)
+
 결과물
 ex) ![image](https://github.com/JeonHKH/test/assets/101096773/59b5a7a3-ca0c-4c19-b309-d972b6fbbc2e)
 
