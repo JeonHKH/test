@@ -1,4 +1,4 @@
-# :bulb: AI CHAT COMIC 
+# :bulb: AI CHAT COMIC PROJECT
 
 [1. 개요](#1-개-요)
 
