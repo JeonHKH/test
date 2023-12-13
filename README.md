@@ -165,11 +165,13 @@ if __name__ == '__main__':
 ```
 
 ##### *casc.html 코드 중*
+```
    <div class="">
 
     <input type="text" id="promptInput" placeholder="Enter prompt...">
     <button onclick="generateText()">Generate</button>
-    <div id="output"></div>
+    <div id="output">
+   </div>
 
 </div>
     <script>
@@ -193,6 +195,7 @@ if __name__ == '__main__':
         }
         
     </script>
+```
 위에 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 가서 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환돼 나온 후 fetch를 통해 받아오는 형식이다
 
 # 3. 만화 Generate
