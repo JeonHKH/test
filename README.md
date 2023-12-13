@@ -277,7 +277,7 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 set COMMANDLINE_ARGS=--api --cors-allow-origins * 커맨드라인을 추가해서 cor error를 피할수 있었다.
 
-### 3-2-3 이미지 시행 착오
+### 2.3.3 이미지 시행 착오
 
  <details><summary>
 </summary>
@@ -287,8 +287,8 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 </details>
 
-prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
-## 3-3 구동 원리
+prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
+## 2.3.4
  <script>
       async function generateImage(imageNumber) {
         const promptId = 'prompt' + imageNumber;
