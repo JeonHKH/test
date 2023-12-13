@@ -122,7 +122,7 @@ chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하
 </details>
 
 
-flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스토리-짜기)
+flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스토리-짜기)<br/>
 에서 생성한 스토리를 넣고 "generate"버튼을 누르면 stablediffusion용 prompt로 바뀌어 밑에 출력이된다.
 
 
@@ -197,7 +197,7 @@ flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스�
 ```
 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 간 뒤 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환되어 나온 후 fetch를 통해 받아오는 형식이다
 
-# 3. 만화 Generate
+### 2.3 만화 Generate
 
 
  <details><summary>
@@ -215,7 +215,7 @@ prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 �
 
 </details>
 
-prompt 입력 칸에 2단계에서 생성한 prompt를 넣고 generate 버튼을 누르면 이미지가 생성돼서 나온다.
+prompt 입력 칸에 [2단계](#22-prompt-생성)에서 생성한 prompt를 넣고 generate 버튼을 누르면 이미지가 생성되 나온다.
 
 ### 3-1 prompt 관련 팁
 
