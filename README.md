@@ -197,6 +197,8 @@ flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스�
 ```
 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 간 뒤 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환되어 나온 후 fetch를 통해 받아오는 형식이다
 
+<br>
+
 ### **2.3 만화 Generate**</br>
 
 
