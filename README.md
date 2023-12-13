@@ -21,7 +21,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 
 
-## 2. 만화생성 과정<br/>
+# 2. 만화생성 과정<br/>
 ### **2.1 준비물**
 * flask 서버
 * fastapi
@@ -188,7 +188,7 @@ casc.html 코드 중
     </script>
 위에 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 가서 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환돼 나온 후 fetch를 통해 받아오는 형식이다
 
-## 3. 만화 Generate
+# 3. 만화 Generate
 
 
  <details><summary>
