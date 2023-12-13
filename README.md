@@ -193,13 +193,102 @@ ex) finetuning한 모델에서 나온 사진
 
 3-2-2 정착
 
+많은 시행 착오를 거쳐 나온 것이 Stablediffusion webui였다.
+
+![image](https://github.com/JeonHKH/test/assets/101096773/45370575-c1be-4d4e-abf6-794179ff0b89)
+sdui 모델 폴더에 미리 모델을 넣어 놓으면 왼쪽위에서 변경하여 checkpoint를 변경할 수 있다
+밑에 lora 같은 경우는 더 높은 퀄리티를 생성할 때 생성할때 사용한다.
+
+fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
+![image](https://github.com/JeonHKH/test/assets/101096773/30ce198b-0872-4fa6-84bd-878058c0ad08)
+
+물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 set COMMANDLINE_ARGS=--api --cors-allow-origins * 커맨드라인을 추가해서 cor error를 피할수 있었다.
+
+3-3 구동 원리
+ <script>
+      async function generateImage(imageNumber) {
+        const promptId = 'prompt' + imageNumber;
+        const imageId = 'image' + imageNumber;
+  
+        const promptText = document.getElementById(promptId).value;
+        if (!promptText) {
+          alert('Please enter a prompt!');
+          return;
+        }
+  
+        const url = 'http://127.0.0.1:7860/sdapi/v1/txt2img';
+        const payload = {
+          prompt: promptText,
+          negative_prompt: "(fat, obese, overweight), (worst quality:1.2), (low quality:1.2), easynegative, (jpeg artifact), watermark, font, text, watermark, username, patreon username, patreon logo, censored, bar censor, (wrinkled, grandma, granny), ((books)), ((painting, mirror))",
+          seed: 564404008,  
+          cfg_scale: 6,
+          sampler_index: 'DPM++ 2M Karras',
+          steps: 30
+        };
+  
+        try {
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+  
+          if (!response.ok) {
+            throw new Error('Error generating image');
+          }
+  
+          const responseData = await response.json();
+          const imageData = responseData.images[0];
+          const imageBlob = base64ToBlob(imageData, 'image/png');
+  
+          const imageUrl = URL.createObjectURL(imageBlob);
+          document.getElementById(imageId).src = imageUrl;
+          console.log(`Image ${imageNumber} generated`);
+        } catch (error) {
+          console.error('Error:', error.message);
+        }
+      }
+  
+      function base64ToBlob(base64Data, contentType) {
+        const sliceSize = 1024;
+        const byteCharacters = atob(base64Data);
+        const byteArrays = [];
+  
+        for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+          const slice = byteCharacters.slice(offset, offset + sliceSize);
+  
+          const byteNumbers = new Array(slice.length);
+          for (let i = 0; i < slice.length; i++) {
+            byteNumbers[i] = slice.charCodeAt(i);
+          }
+  
+          const byteArray = new Uint8Array(byteNumbers);
+          byteArrays.push(byteArray);
+        }
+  
+        return new Blob(byteArrays, { type: contentType });
+      }
+    </script>
+
+위에  payload안에 prompt를 제외하고 나머지 스케일러나 시드 등등을 변경하여 이미지의 퀄리티를 높일 수 있다.
+
+
+홈페이지에서 generate 버튼을 누르면 그게 제가 만든 서버인 http://127.0.0.1:7860로 요청이 들어가 이미지가 생성이 된후 fetch로 이미지가 오는 방식이다
++etc) ![image](https://github.com/JeonHKH/test/assets/101096773/eda52b1e-bbc3-4d97-9d80-adcaadaf6453)
+자신의 이미지가 얼마나 생성됐는지 볼수 있다.
 
 
 
-*****************************************************************************************************************************************************************************************************************
 
-## 3. 웹 페이지 구성
+
+
+****************************************************************************************************************************************************************************************************************
+
+## 3. 최종 결과물
 **3.1 출력화면**<br/>
+![image](https://github.com/JeonHKH/test/assets/101096773/925980a6-af6c-48a4-89ae-b5538e01163c)
 
 
 
