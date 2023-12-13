@@ -57,11 +57,11 @@ open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 >  1-1 구동원리
 
 
-```
- chatboot.html 코드중
-<div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="알고싶은걸 말씀하세요" id="txtMsg">
-<button class="btn btn-success" type="submit" onclick="Send()" id="btnSend">대답하기</button></div>
+>   >   ```
+>   > chatboot.html 코드중
+>   ><div class="input-group mb-3">
+>   ><input type="text" class="form-control" placeholder="알고싶은걸 말씀하세요" id="txtMsg">
+>   ><button class="btn btn-success" type="submit" onclick="Send()" id="btnSend">대답하기</button></div>
 ```
 
 
