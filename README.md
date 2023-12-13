@@ -128,9 +128,9 @@ chatboot.html에서 "알고싶은걸 말씀하세요 "부분에 자신이 원하
 
 flask를 이용하여 홈페이지에서 "enter prompt"칸에 1단계에서 생성한 스토리를 넣고 "generate"버튼을 누르면 stablediffusion용 prompt로 바뀌어 밑에 출력이된다.
 
-2-1 구동원리
+## 2-1 구동원리
 
-2-1-1 flask를 채택한 이유
+** 2-1-1 flask를 채택한 이유 **
 
 1.html에서는 pyhton파일에 js파일처럼 직접적으로 접근할 순 없다
 2. GPT2Tokenizer, GPT2LMHeadModel import하려고 js에서 노력했지만 js에서는 아직 개발이 좨지 않아 저 둘을 받을 수 조차 없다
@@ -192,7 +192,7 @@ casc.html 코드 중
     </script>
 위에 prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 서버인 http://127.0.0.1:5000에 호출이 가서 서버에 pretrained된 모델에서 stable diffusion용 prompt로 변환돼 나온 후 fetch를 통해 받아오는 형식이다
 
-3. 만화 Generate
+## 3. 만화 Generate
 
 
  <details><summary>
@@ -212,7 +212,7 @@ casc.html 코드 중
 
 prompt 입력 칸에 2단계에서 생성한 prompt를 넣고 generate 버튼을 누르면 이미지가 생성돼서 나온다.
 
-3-1 prompt 관련 팁
+### 3-1 prompt 관련 팁
 
 1. 각 prompt를 입력시 길이가 너무 길지 않는게 좋다
 ex) going down the mountain -> mountain, goes down
@@ -220,19 +220,14 @@ ex) going down the mountain -> mountain, goes down
 3.  만약 prompt에 대해 아예 모른다면 https://civitai.com에 들어가 자신이 사용하는 모델을 검색하여 가장 나온 것 같은 사진의 prompt를 변형하는 것이 가장 좋다.
 ![image](https://github.com/JeonHKH/test/assets/101096773/5a60295c-09b0-45b4-8ae9-74853af0f189)
 
-3-2 사용한 api 
+### 3-2 사용한 api 
 
 3-2-1 api 시행 착오
 https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 만들었다
-
- <details><summary>
-</summary>
-
   
 ![image](https://github.com/JeonHKH/test/assets/101096773/b7a125e6-bb2f-4978-b67e-ef16d5598e53)
 
 
-</details>
 
 
 그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해보고 했지만 해결이 불가능 했다.
@@ -243,7 +238,7 @@ ex) replicate 오류 사진
 그래서 finetuning을 통해 모델을 만들어 api를 만들려고 했지만 모델의 결과물이 마음에 들지 않았다.
 ex) finetuning한 모델에서 나온 사진
 
-3-2-2 정착
+### 3-2-2 정착
 
 많은 시행 착오를 거쳐 나온 것이 Stablediffusion webui였다.
 
@@ -269,7 +264,7 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 set COMMANDLINE_ARGS=--api --cors-allow-origins * 커맨드라인을 추가해서 cor error를 피할수 있었다.
 
-3-2-3 이미지 시행 착오
+### 3-2-3 이미지 시행 착오
 
  <details><summary>
 </summary>
@@ -280,7 +275,7 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 </details>
 
 prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다
-3-3 구동 원리
+## 3-3 구동 원리
  <script>
       async function generateImage(imageNumber) {
         const promptId = 'prompt' + imageNumber;
@@ -362,8 +357,8 @@ prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 �
 
 ****************************************************************************************************************************************************************************************************************
 
-## 3. 최종 결과물
-**3.1 출력화면**<br/>
+## 4. 최종 결과물
+**4.1 출력화면**<br/>
 ![image](https://github.com/JeonHKH/test/assets/101096773/925980a6-af6c-48a4-89ae-b5538e01163c)
 
 
@@ -371,7 +366,7 @@ prompt를 세분하게 애매모호하게 넣고 negativw prompt를 잘 잡고 �
 
 ********************************************************************************************************************************************************************
 
-### 4.1 홈페이지 
+## 4.2 홈페이지 
 
 ![image](https://github.com/JeonHKH/test/assets/101096773/e11a4bb7-86be-4b2a-9daa-9903588da3a2)
 ![image](https://github.com/JeonHKH/test/assets/101096773/f03a21ca-7f2f-4c17-8513-064c582be09f)   
