@@ -38,6 +38,53 @@ open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
 위 이미지처럼 원하는 형식,장르등등의 스토리를 넣고 대답하기를 누르면 밑에 빈칸에 chatgpt가 대답한 내용이 출력되는 방식을  채택하였습니다.
 
+1-1 구동원리
+
+chatboot.html 코드중
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="알고싶은걸 말씀하세요" id="txtMsg">
+    <button class="btn btn-success" type="submit" onclick="Send()" id="btnSend">대답하기</button>
+</div>
+<textarea  id="txtOut"  rows="5" class="form-control" placeholder="답변이 나타나는 곳입니다"></textarea>
+<script src="chat.js" ></script>
+
+chat.js 코드중 
+
+var OPENAI_API_KEY = 
+         "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";
+
+
+function Send(){
+
+  var sQuestion = txtMsg.value;
+  var data = {
+        model: "text-davinci-003",
+        prompt: sQuestion,
+        max_tokens: 2048,
+        temperature: 0
+  }  
+  $.ajax({
+    type: "POST",
+    url: 'https://api.openai.com/v1/completions',
+    headers:{
+        "Accept" : "application/json",
+        "Content-Type": "application/json", 
+        "Authorization": "Bearer " +  OPENAI_API_KEY },
+    data: JSON.stringify(data),
+
+  }).done(function(response) {
+
+        var sanswer = response.choices[0].text
+        txtOut.value = sanswer
+
+  }).fail(function(error) {
+    alert("!/js/user.js에서 에러발생: " + error.statusText);
+    console.log(error)
+  });
+}
+chatboot.html에서 "알고싶은걸 말씀하세요 "부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를 호출하여 chatgpt가 대답을 하고 var sanswer = response.choices[0].textdml 형식으로 가져온 후 "답변이 나타나는 곳입니다"에
+표시돤다고 보면 됩니다.
+
   
 
 
