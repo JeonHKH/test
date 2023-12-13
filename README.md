@@ -124,9 +124,12 @@ chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하
 flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스토리-짜기)
 에서 생성한 스토리를 넣고 "generate"버튼을 누르면 stablediffusion용 prompt로 바뀌어 밑에 출력이된다.
 
-#### 구동원리
+#### 구동원리      
+<br/>
 
-** 2-1-1 flask를 채택한 이유**
+
+
+**2.2.1 flask를 채택한 이유**
 
 1.html에서는 pyhton파일에 js파일처럼 직접적으로 접근할 순 없다
 2. GPT2Tokenizer, GPT2LMHeadModel import하려고 js에서 노력했지만 js에서는 아직 개발이 좨지 않아 저 둘을 받을 수 조차 없다
