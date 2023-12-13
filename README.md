@@ -98,8 +98,8 @@ function Send(){
 }
 ```
 
-chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를<br/> 호출하여 chatgpt가 대답을 하고 "답변이 나타나는 곳입니다"에 표시됩니다
------------------------------------------
+chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를<br/> 호출하여 chatgpt가 대답을 하고 "답변이 나타나는 곳입니다"에 표시됩니다.
+
 
 ### **2.2 prompt 생성**</br>
 
@@ -124,8 +124,9 @@ chatboot.html에서 "알고싶은걸 말씀하세요" 부분에 자신이 원하
 
 flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스토리-짜기)
 에서 생성한 스토리를 넣고 "generate"버튼을 누르면 stablediffusion용 prompt로 바뀌어 밑에 출력이된다.
+<hr>
 
-#### 구동원리      
+#### *구동원리      
 <br/>
 
 
