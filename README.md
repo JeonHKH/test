@@ -30,7 +30,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
  **2.2 만화 생성하기**
  
-> 1. 스토리 짜기
+1. 스토리 짜기
 open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
  <details><summary>
@@ -54,13 +54,15 @@ open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
 
 위 이미지처럼 원하는 형식,장르등등의 스토리를 넣고 대답하기를 누르면 밑에 빈칸에 chatgpt가 대답한 내용이 출력되는 방식을  채택하였습니다.
 
-> > 1-1 구동원리
+>  1-1 구동원리
 
-chatboot.html 코드중
->```
+
+> >```
+ chatboot.html 코드중
+> >```
 <div class="input-group mb-3">
->```    <input type="text" class="form-control" placeholder="알고싶은걸 말씀하세요" id="txtMsg">
->```    <button class="btn btn-success" type="submit" onclick="Send()" id="btnSend">대답하기</button></div>
+> >```    <input type="text" class="form-control" placeholder="알고싶은걸 말씀하세요" id="txtMsg">
+> >```    <button class="btn btn-success" type="submit" onclick="Send()" id="btnSend">대답하기</button></div>
 
 
 <textarea  id="txtOut"  rows="5" class="form-control" placeholder="답변이 나타나는 곳입니다"></textarea>
