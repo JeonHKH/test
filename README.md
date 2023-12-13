@@ -34,9 +34,10 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 open ai api를 이용하여 chatgpt를 통해 생성할 예정입니다
  <details><summary>
 </summary>
-![image](https://github.com/JeonHKH/test/assets/101096773/e11a4bb7-86be-4b2a-9daa-9903588da3a2)
+![11111111111111111111111111111](https://github.com/JeonHKH/test/assets/101096773/17f236ca-7cad-4ddc-b26b-4c7ae0b9e827)
+  </details>
 ![image](https://github.com/JeonHKH/test/assets/101096773/832a385e-4e1d-4c6d-8718-45172d7199b2)
-</details>
+
 
 위 이미지처럼 원하는 형식,장르등등의 스토리를 넣고 대답하기를 누르면 밑에 빈칸에 chatgpt가 대답한 내용이 출력되는 방식을  채택하였습니다.
 
