@@ -1,4 +1,4 @@
-# AI 네컷만화 보고서
+# 'pray' AI 네컷만화 보고서
 
 [1. 개요](#1-개-요)
 
@@ -18,7 +18,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 
 프로젝트 목표
-그림을 배우지 않거나 그림의 'ㄱ'자도 모르는 일반인들도 수준급의 만화를 만들 수 있다.
+그림을 전문적으로 배우지 않거나 만화 스토리 작성에 어려움을 겪는 만화의 'ㅁ'자도 모르는 일반인들도 수준급의 만화를 만들 수 있다.
 
 AI 네컷만화를 만드는 과정은 세 가지 단계로 구분할 수 있습니다.
 
@@ -27,23 +27,19 @@ AI 네컷만화를 만드는 과정은 세 가지 단계로 구분할 수 있습
 
 + 2 그림생성: 스테이블 디퓨젼 api를 활용하여 사용자가 생성한 프롬프트를 토대로 이미지를 생성합니다.
 
-- 3 웹 표시 및 저장: node.js로 사용가자 생성한 이미지를 홈페이지에 표시하고 저장합니다.
+- 3 웹 표시: 로 사용가자 생성한 이미지를 홈페이지에 표시하고 저장합니다.
 
 
 ## 2. 그림생성
-  **2.1 StableDiffusion API를 위한 환경 설정 및 그림 프롬프트 작성**
+  **2.1 를 위한 환경 설정 및 그림 프롬프트 작성**
   
-        const apiKey = 'stable diffusion apikey';
-        const prompt = "<lora:Solo Levelling v2-000004:0. 7>, female, black hair, short hair, grey eyes, detailed eyes, solo focus, simple background, female focus, solo, standing, portrait, (masterpiece:1. 0),             (best quality:1. 0), (8k wallpaper:1. 0), (detailed deep eyes), deep eyes, {{{looking away}}}";
-        const numberOfPics = '4' //Limitation of 4 maximum image generation per call observed.
 
 
 
-**2.2  ai model 선정**
 
-        "key": apiKey,
-        "model_id": "anything-v4",
-        "prompt": prompt ,
+**2.2  선정**
+
+
 *****************************************************************************************************************************************************************************************************************
 
 ## 3. 웹 표시 및 저장
