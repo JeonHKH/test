@@ -42,6 +42,8 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 
 ## 3. 웹 페이지 구성
 **3.1 출력화면**<br/>
+![faker](https://github.com/JeonHKH/test/assets/101096773/18fdd109-5f96-4551-a608-716451c17292)
+![zeus](https://github.com/JeonHKH/test/assets/101096773/2eeab467-8b8a-4020-a1e1-ae94dc3cf8bb)
 
 
 
