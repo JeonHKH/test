@@ -28,7 +28,7 @@ AI 네컷만화 프로젝트는 자신이 원하는 내용을 입력해주면 �
 * openai api key
 
  
-## **2.1 스토리 짜기**</br>
+### **2.1 스토리 짜기**</br>
 open ai api를 이용하여 chatgpt를 통해 스토리를 생성할 예정입니다
 
  <details><summary>
