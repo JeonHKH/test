@@ -90,6 +90,11 @@ function Send(){
 
 chatboot.html에서 "알고싶은걸 말씀하세요 "부분에 자신이 원하는 것을 입력하고 대답하기를 누르면 chat.js에서 ajax를 통해 openai api를 호출하여 chatgpt가 대답을 하고  "답변이 나타나는 곳입니다"에 표시된다고 보면 됩니다.
 
+2. prompt 생성
+
+
+![image](https://github.com/JeonHKH/test/assets/101096773/f03a21ca-7f2f-4c17-8513-064c582be09f)
+flask를 이용하여 html에서 
  
 
 
