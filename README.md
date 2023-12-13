@@ -62,7 +62,7 @@ open ai api를 이용하여 chatgpt를 통해 스토리를 생성할 예정입�
 >6   <script src="chat.js" ></script>
 >```
 
-##### * chat.js 코드중*
+##### *chat.js 코드중*
 
 ```
 var OPENAI_API_KEY = 
