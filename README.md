@@ -251,7 +251,8 @@ ex)![image](https://github.com/JeonHKH/test/assets/101096773/34cc31aa-11e8-4990-
 
 그래서 finetuning을 통해 모델을 만들어 api를 만들려고 했지만 모델의 결과물이 마음에 들지 않았다.
 
-training용 사진 ##### (인기만화 마음소리)
+training용 사진
+###### (인기만화 마음소리)
 ![image](https://github.com/JeonHKH/test/assets/101096773/2a7df6fe-4329-4b87-9afd-ed604a937af9)
 
 
