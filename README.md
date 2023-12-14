@@ -371,9 +371,9 @@ prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하�
 위에  payload안에 prompt를 제외하고 나머지 스케일러나 시드 등등을 변경하여 이미지의 퀄리티를 높일 수 있다.
 
 
-홈페이지에서 generate 버튼을 누르면 그게 제가 만든 서버인 http://127.0.0.1:7860로 요청이 들어가 이미지가 생성이 된후 fetch로 이미지가 오는 방식이다
+홈페이지에서 generate 버튼을 누르면 제가 만든 서버인 http://127.0.0.1:7860로 요청이 들어가 이미지가 생성이 된후 fetch로 이미지가 전달되 방식이다
 <br/>
-+etc) ![image](https://github.com/JeonHKH/test/assets/101096773/eda52b1e-bbc3-4d97-9d80-adcaadaf6453)
++etc) ![image](https://github.com/JeonHKH/test/assets/101096773/eda52b1e-bbc3-4d97-9d80-adcaadaf6453)<br/>
 자신의 이미지가 얼마나 생성됐는지 볼수 있다.
 
 
