@@ -211,7 +211,7 @@ prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 �
 
  <details><summary>
 </summary>
-<br>
+  
 ![image](https://github.com/JeonHKH/test/assets/101096773/65e9b0e4-777b-44c3-885a-7a9b527cb6f4)
 
 </details>
