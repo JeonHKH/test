@@ -141,7 +141,7 @@ flask를 이용하여 홈페이지에서 "enter prompt"칸에 [1단계](#21-스�
 **2.2.1 flask를 채택한 이유**
 
 1.html에서는 pyhton파일에 js파일처럼 직접적으로 접근할 순 없다<br/>
-2. GPT2Tokenizer, GPT2LMHeadModel import하려고 js에서 노력했지만 js에서는 아직 개발이 좨지 않아 저 둘을 받을 수 조차 없다<br/>
+2. GPT2Tokenizer, GPT2LMHeadModel import하려고 js에서 노력했지만 js에서는 아직 개발이 되지 않아 저 둘을 받을 수 조차 없다<br/>
 3.from flask_cors import CORS flask에서는 node와 달리 저런 간단한 코드 하나면 cors error에서 벗어날 수 있다
 
 **2.2.2 구동 코드**
@@ -211,7 +211,6 @@ prompt에 입력값을 입력 후 generate를 하면 flask를 통해 개설된 �
 
  <details><summary>
 </summary>
-<br>
 <br>
 ![image](https://github.com/JeonHKH/test/assets/101096773/65e9b0e4-777b-44c3-885a-7a9b527cb6f4)
 
