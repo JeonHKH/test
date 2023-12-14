@@ -243,7 +243,7 @@ https://stablediffusionapi.com에서 제공한 api사용하여 홈페이지를 �
 
 
 
-그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해보고 했지만 해결이 불가능 했다.
+그랬더니 cor에러가 떴다. 그래서 nodejs를 이용하여 로컬서버를 만들어도 보고 프록시 서버도 사용해봤지만 해결이 불가능 했다.
 
 이 문제는 다른 api를 사용때도 항상 발생했다.
 ex)![image](https://github.com/JeonHKH/test/assets/101096773/34cc31aa-11e8-4990-9893-de0a271b1c79)
@@ -251,7 +251,7 @@ ex)![image](https://github.com/JeonHKH/test/assets/101096773/34cc31aa-11e8-4990-
 
 그래서 finetuning을 통해 모델을 만들어 api를 만들려고 했지만 모델의 결과물이 마음에 들지 않았다.
 
-training용 사진
+training용 사진 ##### (인기만화 마음소리)
 ![image](https://github.com/JeonHKH/test/assets/101096773/2a7df6fe-4329-4b87-9afd-ed604a937af9)
 
 
