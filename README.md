@@ -284,7 +284,7 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 
 </details>
 
-물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 ** set COMMANDLINE_ARGS=--api --cors-allow-origins *  ** 커맨드라인을 추가해서 cor error를 피할수 있었다.
+물론 stablediffusion webui도 cor error에 걸렸지만 webui.bat에 __set COMMANDLINE_ARGS=--api --cors-allow-origins *__ 커맨드라인을 추가해서 cor error를 피할수 있었다.
 
 ### 2.3.3 이미지 시행 착오
 
