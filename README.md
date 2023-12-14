@@ -374,7 +374,7 @@ prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하�
 홈페이지에서 generate 버튼을 누르면 제가 만든 서버인 http://127.0.0.1:7860로 요청이 들어가 이미지가 생성이 된후 fetch로 이미지가 전달되 방식이다
 <br/>
 +etc) ![image](https://github.com/JeonHKH/test/assets/101096773/eda52b1e-bbc3-4d97-9d80-adcaadaf6453)<br/>
-자신의 이미지가 얼마나 생성됐는지 볼수 있다.
+##### 자신의 이미지가 얼마나 생성됐는지 볼수 있다.
 
 
 
