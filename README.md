@@ -297,7 +297,9 @@ fastapi를 이용해 api를 만들 수 있기 때문에 채택했다
 </details>
 
 prompt를 자세하게 넣지 않거나 negativw prompt를 잘 잡고 시작하지 않으면 이런 이미지가 나오게 된다<br/>
-**2.3.4 구동원리** 
+
+
+### 2.3.4 구동원리
 ~~~
 1  <script>
 2       async function generateImage(imageNumber) {
